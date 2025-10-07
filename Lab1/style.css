@@ -14,7 +14,6 @@ header{
 	background-color: #B78E5E;
 	border: 2px solid white;
 	border-bottom: 0px;
-	
 }
 
 .main{
@@ -26,7 +25,7 @@ header{
 .left_side{
 	padding: 2% 2%;
 	background-image: url("bg_up.png");
-	width: 55%;
+	width: 45%;
 	border-right: 2px solid white;
 	font-size: 20px;
 	
@@ -36,6 +35,7 @@ header{
 	background-image: url("background.png");
 	background-repeat: repeat;
 	padding: 0 2%;
+	width: 100%;
 	
 }
 
@@ -54,15 +54,15 @@ h1{
 	color: white;
 }
 
+.col{
+	color: white;
+	text-align: center;
+}
+
 .bg{
 	background-color: #B78E5E;
 	width:550px;
 	border: 1px solid black;
-}
-
-h3{
-	text-align: center;
-	color: white;
 }
 
 .center{
