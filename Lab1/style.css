@@ -112,3 +112,21 @@ img{
 	border-radius: 4px;
 	width:10%;
 }
+
+.test-block{
+	width: 200px;
+	border:2px solid rgba(208,178,109,1);
+	background: rgba(208,178,109,0.7);
+	text-align: center;
+	color:#00;
+	padding:20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
