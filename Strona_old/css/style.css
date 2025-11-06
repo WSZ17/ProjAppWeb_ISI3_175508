@@ -101,11 +101,15 @@ img{
 
 #zegarek{
 	background-color: #B78E5E;
+	border: 3px solid white;
+	border-radius: 4px;
 	width:10%;
 }
 
 #data{
 	background-color: #B78E5E;
+	border: 3px solid white;
+	border-radius: 4px;
 	width:10%;
 }
 

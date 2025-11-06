@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+<link rel="stylesheet" href="../css/style.css">
+<meta name="description" content="Projekt 1">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<meta name="author" content="Weronika Szulc">
+<title>Złote Maliny</title>
+</head>
+<body class="bb">
+<!-- css klasy formatowanie potrzebuje .[nazwa_klasy] -->
+<header>
+<p>Złote Maliny</p>
+</header>
+<div class="main">
+<div class="left_side">
+<h1> Nawigacja </h1>
+<ul>
+<li><a href="Strona_glowna.html">Strona główna</a></li>
+<li><a href="Historia.html">Historia nagrody</a></li>
+<li><a href="Nom_2025.html">Nominacje z 2025 roku</a></li>
+<li><a href="Nom_2024.html">Nominacje z 2024 roku</a></li>
+<li><a href="Nom_2023.html">Nominacje z 2023 roku</a></li>
+<li><a href="Nom_2022.html">Nominacje z 2022 roku</a></li>
+<li><a href="Eksperymenty_js.html">Pole boju</a></li>
+</ul>
+</div>
+<!-- WSTAW ZDJĘCIA PODPISANE PARAGRAFAMI LINKUJĄCYM ŹRÓDŁA -->
+<!-- citization po prawej: style="text-align:right" -->
+<div class="right_side">
+<h1>Czym są Złote Maliny?</h1>
+<img src="../zdjecia/malina.jfif" class="center">
+<p style="text-align:right">Źródło: <a href="https://faroutmagazine.co.uk/razzies-2025-full-nominations-list/"> "Golden Raspberry Awards" </a></p>
+<!-- historia Malin-->
+<h3 class="col">Złote Maliny to pewnego rodzaju <b>anty Oscary</b>, nagrody przyznawane osobom z branży filmowej za najgorsze produkcje i występy w filmach. Ich celem jest pokazanie, że Hollywood czasem wypuszcza filmy tak słabe, że aż zasługują na medal... w postaci uroczo tandetnej plastikowej maliny. Innymi słowy: honorują kino, które nie wyszło, choć miało wyjść fenomenalnie.</h3>
+<!-- lista z obecnie zobowiązującymi nagrodami-->
+<div class="list">
+<h2>Obecnie zobowiązujące kategorie Złotych Malin:</h2>
+<ul>
+<li>Najgorszy film</li>
+<li>Najgorszy reżyser</li>
+<li>Najgorszy aktor</li>
+<li>Najgorsza aktorka</li>
+<li>Najgorszy aktor drugoplanowy</li>
+<li>Najgorsza aktorka drugoplanowa</li>
+<li>Najgorsze combo</li>
+<li>Najgorszy scenariusz</li>
+<li>Najgorszy prequel, remake, "zrzynka" lub sequel</li>
+<li>Nagroda Odkupienia</li>
+</ul>
+</div>
+<!-- tabelę z usuniętymi już nie przyznawanymi nagrodami + rok w którym obowiązywały-->
+<h2 class="bg">Kategorie Złotych Malin, które już nie zobowiązują</h2>
+<table>
+<tr>
+<th>Tytuł nagrody</th>
+<th>Lata w których obowiązywała</th>
+</tr>
+<tr>
+<td>"Najgorszy oryginalny utwór muzyczny"</td>
+<td>1980-1999 oraz 2002</td>
+</tr>
+<tr>
+<td>"Najgorszy debiut"</td>
+<td>1981-1998, z wyjątkiem 1989</td>
+</tr>
+<tr>
+<td>"Najgorsza ścieżka dźwiękowa"</td>
+<td>1981-1985</td>
+</tr>
+<tr>
+<td>"Najgorsze efektyy wizualne"</td>
+<td>1986-1987</td>
+</tr>
+<tr>
+<td>"Najgorsza ekranowa para"</td>
+<td>1994-2009 oraz 2011-2012</td>
+</tr>
+<tr>
+<td>"Najgorsza obsada ekranowa"</td>
+<td>2011-2012</td>
+</tr>
+</table>
+<br>
+<table>
+<td>W 2010 roku istniała również kategoria łącząca dwie ostatnie: "Najgorsza ekranowa para/obsada"</td>
+</table>
+<!-- lista numerowana -->
+<h3 class="col">Osobistości, które otrzymały największą ilość Złotych Malin (stan na 2025 rok):</h3>
+<div class="list">
+<ol>
+<li>Sylvester Stallone (12 nagród)</li>
+<li>Adam Sandler (9 nagród)</li>
+<li>Madonna (9 nagród)</li>
+<li>Kevin Costner (6 nagród)</li>
+<li>Eddie Murphy(6 nagród)</li>
+</ol>
+</div>
+<!--Zdjęcia-->
+<h1>Galeria</h1>
+<div class="gallery">
+<img src="../zdjecia/JW.jpg" height="300px">
+<img src="../zdjecia/HB.jpg" height="300px">
+<img src="../zdjecia/JW2.avif" height="300px">
+<img src="../zdjecia/RC.jpg" height="300px">
+<img src="../zdjecia/SB.jpg" height="300px">
+<img src="../zdjecia/raz.webp" height="300px">
+</div>
+<br>
+<div class="list">
+<p>Źródła zdjęć</p>
+<ul>
+<li><a href="https://commons.wikimedia.org/w/index.php?curid=6727674">Autorstwa Par Lance - DSC06954, CC BY-SA 2.0 </a></li>
+<li><a href="https://www.upi.com/News_Photos/view/upi/107e0eced184462f383ebbe19ed9ec21/HALLE-BERRY-ACCDEPTS-RAZZIE-AWARD-IN-PERSON/">Zdjęcie ze strony UPI</a></li>
+<li><a href="https://www.edinburghnews.scotsman.com/whats-on/arts-and-entertainment/the-razzies-2025-what-are-they-who-has-attended-2025-nominees-4966201">Zdjęcie ze strony Edinburgh News (poprzez Getty Images)</a></li>
+<li><a href="https://razzies.com/index.html">Zdjęcie ze strony głównej Złotych Malin</a></li>
+<li><a href="https://commons.wikimedia.org/w/index.php?curid=9688674">By Sandra_Bullock_at_2010_Razzies.jpg: Shari B. Ellisderivative work: Tabercil (talk) - Sandra_Bullock_at_2010_Razzies.jpg, CC BY-SA 2.0</a></li>
+<li><a href="https://www.wwaytv3.com/the-43rd-annual-razzie-award-winners-are/">Zdjęcie: John Wilson/Fundacja Nagrody Złotej Maliny/MGN</a></li>
+</ul>
+</div>
+<br>
+</div>
+</div>
+<footer>
+<p>Autor strony: Weronika Szulc</p>
+<p>Tło wykonane z pomocą <a href="https://pl.m.wikipedia.org/wiki/Plik:Fleur-de-lis-fill.svg">plików Wikipedii</a></p>
+</footer>
+<?php
+	$nr_indeksu='175508';
+	$nrGrupy='ISI3';
+
+	echo 'Weronika Szulc ' . $nr_indeksu . ' grupa ' . $nrGrupy . '<br /><br />';
+?>
+</body>
+</html>
