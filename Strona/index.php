@@ -1,6 +1,8 @@
 <?php
  error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
  /* po tym komentarzu będzie kod do dynamicznego ładowania stron */
+ include('cfg.php');
+ include('showpage.php');
 ?>
 <!DOCTYPE html>
 <html lang="UTF-8">
@@ -23,47 +25,31 @@
 <div class="left_side">
 <h1> Nawigacja </h1>
 <ul>
-    <li><a href="index.php?page=glowna">Strona główna</a></li>
-    <li><a href="index.php?page=historia">Historia nagrody</a></li>
-    <li><a href="index.php?page=nom2025">Nominacje z 2025 roku</a></li>
-    <li><a href="index.php?page=nom2024">Nominacje z 2024 roku</a></li>
-    <li><a href="index.php?page=nom2023">Nominacje z 2023 roku</a></li>
-    <li><a href="index.php?page=nom2022">Nominacje z 2022 roku</a></li>
-	<li><a href="index.php?page=filmy">Filmy</a></li>
-    <li><a href="index.php?page=eksperymenty">Pole boju</a></li>
+    <li><a href="index.php?id=1">Strona główna</a></li>
+    <li><a href="index.php?id=2">Historia nagrody</a></li>
+    <li><a href="index.php?id=3">Nominacje z 2025 roku</a></li>
+    <li><a href="index.php?id=4">Nominacje z 2024 roku</a></li>
+    <li><a href="index.php?id=5">Nominacje z 2023 roku</a></li>
+    <li><a href="index.php?id=6">Nominacje z 2022 roku</a></li>
+	<li><a href="index.php?id=7">Filmy</a></li>
 </ul>
 </div>
 <!-- WSTAW ZDJĘCIA PODPISANE PARAGRAFAMI LINKUJĄCYM ŹRÓDŁA -->
 <!-- citization po prawej: style="text-align:right" -->
 <div class="right_side">
 <?php
-    if (!isset($_GET['page']) || $_GET['page'] == '' || $_GET['page'] == 'glowna') {
-        $strona = 'html/glowna.html';
-    } else if ($_GET['page'] == 'historia') {
-        $strona = 'html/historia.html';
-    } else if ($_GET['page'] == 'nom2025') {
-        $strona = 'html/nom_2025.html';
-    } else if ($_GET['page'] == 'nom2024') {
-        $strona = 'html/nom_2024.html';
-    } else if ($_GET['page'] == 'nom2023') {
-        $strona = 'html/nom_2023.html';
-    } else if ($_GET['page'] == 'nom2022') {
-        $strona = 'html/nom_2022.html';
-    } else if ($_GET['page'] == 'eksperymenty') {
-        $strona = 'html/eksperymenty_js.html';
-    } else if ($_GET['page'] == 'filmy') {
-        $strona = 'html/filmy.html';
-    } else {
-        // Domyślnie lub gdy nie znaleziono strony
-        $strona = 'html/glowna.html';
-    }
-
-    // Sprawdzenie istnienia i dołączenie pliku
-    if (file_exists($strona)) {
-        include($strona);
-    } else {
-        echo "<h2>Nie znaleziono strony: $strona</h2>";
-    }
+              if (isset($_GET['id']))
+              {
+                  $id_strony = $_GET['id'];
+                  $tresc_strony = PokazPodstrone($id_strony);
+                  echo $tresc_strony;
+              }
+              else
+              {
+                  $tresc_strony = PokazPodstrone(1); 
+                  echo $tresc_strony;
+              }
+            
 ?>
 </div>
 </div>
