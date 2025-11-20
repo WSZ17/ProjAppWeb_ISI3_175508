@@ -1,12 +1,25 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+<link rel="stylesheet" href="../css/style.css">
+<meta name="description" content="Projekt 1">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<meta name="author" content="Weronika Szulc">
+<title>Panel CMS</title>
+</head>
+<body class="bb">
+<header>
+<p>Panel CSM</p>
+</header>
+<div class="main">
+<div class="right_side">
 <?php
-
 session_start();
 include '../cfg.php';
 
 function FormularzLogowania() {
     $wynik = '
         <div class="logowanie">
-            <h1 class="heading">Panel CMS: </h1>
             <div class="logowanie">
                 <form method="post" name="LoginForm" enctype="multipart/form-data" action="'.htmlspecialchars($_SERVER['REQUEST_URI']).'">
                     <table class="logowanie">
@@ -194,3 +207,7 @@ function UsunPodstrone($link, $id) {
 }
 
 ?>
+</div>
+</div>
+</body>
+</html>
