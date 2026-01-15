@@ -58,7 +58,7 @@ function WyslijMailKontakt($odbiorca) {
 
 	/* Dane konta e-mail nadawcy */
     $prawdziwy_nadawca = 'szulc.w@o2.pl'; 
-    $haslo_o2 = 'YareYareDaze'; //
+    $haslo_o2 = '*****'; //
 
 	/* Sprawdzenie czy wszystkie pola formularza są wypełnione */
     if (empty($_POST['temat']) || empty($_POST['tresc']) || empty($_POST['email'])) 
@@ -126,7 +126,7 @@ function PrzypomnijHaslo() {
     
 	/* Dane konta e-mail nadawcy */
     $prawdziwy_nadawca = 'szulc.w@o2.pl'; 
-    $haslo_o2 = 'YareYareDaze';
+    $haslo_o2 = '*****';
 
 	/* Formularz przypomnienia hasła stworzony z pomocą HTML */
     $form_haslo = '
