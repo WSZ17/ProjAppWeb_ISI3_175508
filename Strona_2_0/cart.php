@@ -35,7 +35,7 @@ function PokazProduktySklep($link) {
 }
 
 /**
- * Dodaje produkt do sesji (Zadanie 1) [cite: 105, 113-125]
+ * Dodaje produkt do sesji
  */
 function DodajDoKoszyka($id_prod, $ile_sztuk = 1) {
     // 1. Inicjalizacja licznika, jeśli nie istnieje
@@ -43,16 +43,15 @@ function DodajDoKoszyka($id_prod, $ile_sztuk = 1) {
         $_SESSION['count'] = 0;
     }
 
-    // 2. Sprawdzenie, czy produkt już jest w koszyku - jeśli tak, zwiększamy tylko ilość
-    // To zapobiega sztucznemu nabijaniu licznika "count"
+    //Sprawdzenie, czy produkt już jest w koszyku i tylko zwiększa ilość, jeżeli tak
     for ($i = 0; $i < $_SESSION['count']; $i++) {
         if (isset($_SESSION[$i . '_1']) && $_SESSION[$i . '_1'] == $id_prod) {
             $_SESSION[$i . '_2'] += $ile_sztuk;
-            return; // Kończymy funkcję, nie zwiększamy count
+            return; 
         }
     }
 
-    // 3. Jeśli produktu nie ma, dodajemy go jako nowy element
+    //Dodanie nowego produktu jeżeli go jednak nie ma w koszyku
     $nr = $_SESSION['count'];
     
     $_SESSION[$nr . '_0'] = $nr;
@@ -60,12 +59,11 @@ function DodajDoKoszyka($id_prod, $ile_sztuk = 1) {
     $_SESSION[$nr . '_2'] = $ile_sztuk;
     $_SESSION[$nr . '_3'] = time();
 
-    // 4. Zwiększamy licznik DOPIERO PO dodaniu produktu
     $_SESSION['count']++;
 }
 
 /**
- * Usuwa produkt z sesji [cite: 174]
+ * Usuwa produkt z sesji 
  */
 function UsunZKoszyka($nr) {
     unset($_SESSION[$nr.'_0']);
@@ -75,7 +73,7 @@ function UsunZKoszyka($nr) {
 }
 
 /**
- * Wyświetla koszyk i sumuje wartości Brutto [cite: 107, 173]
+ * Wyświetla koszyk i sumuje wartości Brutto 
  */
 function PokazKoszyk($link) {
     $suma_brutto = 0;
