@@ -1,0 +1,245 @@
+/* --- Ustawienia ogólne --- */
+body {
+    margin: 3% 5%; /* Skrócony zapis margin: top/bottom left/right */
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Czytelna czcionka dla całej strony */
+    color: white; /* Ujednolicony kolor tekstu */
+    background-color: #6C1D1C; /* Kolor tła z klasy .bb przeniesiony do body dla pewności */
+}
+
+/* Klasa .bb pozostawiona dla kompatybilności, jeśli jest używana w HTML */
+.bb {
+    background-color: #6C1D1C;
+}
+
+/* --- Nagłówek --- */
+header {
+    text-align: center;
+    font-family: "Copperplate", fantasy; /* Ozdobna czcionka tylko dla nagłówków */
+    font-size: 50px;
+    background-color: #B78E5E;
+    border: 2px solid white;
+    border-bottom: 0px;
+    /* Cienie */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+}
+
+/* --- Główny kontener --- */
+.main {
+    background-color: #B78E5E;
+    display: flex;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cień rzucany przez główną ramkę */
+}
+
+.left_side {
+    padding: 2%;
+    background-image: url("../zdjecia/bg_up.png");
+    width: 45%;
+    border-right: 2px solid white;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Cień pod tekstem dla czytelności na tle */
+}
+
+.left_side ul {
+    list-style-type: none; /* Usunięcie kropek z listy menu */
+    padding: 0;
+}
+
+.left_side li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+.left_side li a:hover {
+    text-shadow: 0 0 5px #fff; /* Efekt świecenia po najechaniu */
+}
+
+.right_side {
+    background-image: url("../zdjecia/background.png");
+    background-repeat: repeat;
+    padding: 2%;
+    width: 100%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* --- Stopka --- */
+footer {
+    text-align: right;
+    font-size: 15px;
+    background-color: #B78E5E;
+    padding: 1%;
+    border: 2px solid white;
+    border-top: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* --- Typografia i Elementy --- */
+h1, h2, h3 {
+    font-family: "Copperplate", fantasy;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    margin-top: 0;
+}
+
+.col {
+    color: white;
+    text-align: center;
+}
+
+.bg {
+    background-color: #B78E5E;
+    width: 550px;
+    border: 2px solid white; /* Zmieniono z czarnego na biały dla spójności */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: "Copperplate", fantasy;
+    text-align: center;
+}
+
+.list {
+    background-color: #B78E5E;
+    padding: 1%;
+    border: 2px solid white;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* --- Tabele --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+th, td {
+    background-color: #B78E5E;
+    border: 1px solid white; /* Zmieniono na biały dla spójności */
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+th {
+    background-color: #a0784d; /* Nieco ciemniejszy nagłówek tabeli */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* --- Zdjęcia --- */
+img {
+    border: 3px solid white;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4); /* Dodany cień do zdjęć */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Odstępy między zdjęciami */
+    margin: 20px auto;
+}
+
+/* --- Elementy JS (Zegar/Data) --- */
+#zegarek, #data {
+    background-color: #B78E5E;
+    /* Usunięto sztywne width: 10% żeby tekst się mieścił */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* --- Test Block --- */
+.test-block {
+    width: 200px;
+    border: 2px solid white;
+    background: rgba(208, 178, 109, 0.9); /* Zwiększone krycie */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    font-weight: bold;
+    /* User select */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* --- Formularze --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); /* Lekko przezroczyste tło inputa */
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);
+    font-family: inherit;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.form-submit-btn {
+    background-color: #6C1D1C; /* Zmieniono na kolor przewodni (ciemny burgund) */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Copperplate", fantasy;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+
+.form-submit-btn:hover {
+    background-color: #8a2524;
+    transform: translateY(-2px); /* Lekkie uniesienie przycisku */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
